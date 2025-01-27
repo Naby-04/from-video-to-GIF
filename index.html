@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>from video to Gif</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Transforme une vidéo en GIF 🎥➡️🖼️</h1>
+      <form action="#">
+        <input type="file" accept="video/*" id="inputFile" />
+      </form>
+      <div class="gif-container">
+        <div id="show">Prévisualisation vidéo ici</div>
+        <button id="generateGif" disabled>Créer un GIF</button>
+        <div id="preview">Votre GIF sera ici</div>
+        <div id="showLink"></div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/gif.js@0.2.0/dist/gif.min.js"></script>
+    <script src="gif.js"></script>
+    <script src="gif.worker.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
